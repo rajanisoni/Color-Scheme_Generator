@@ -7,11 +7,11 @@ This project was a solo-project challenge in Scrimba's carrer path API module.
 
 ## Screenshots
 
-<div text-align ="center">
-    <img src="/Screenshot 1.jpg" width="400px"/> 
+<div text-align ="center" display="inline">
+    <img src="/Screenshot 1.jpg" width="300px"/> 
 </div>
-<div text-align ="center">
-    <img src="/Screenshot 2.jpg" width="400px"/> 
+<div text-align ="center" display="inline">
+    <img src="/Screenshot 2.jpg" width="300px"/> 
 </div>
 
 ## Project Link
