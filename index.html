@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Color Scheme Generator</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="index.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+      <div class="container flex">
+            <section>
+                  <div class="head-section flex">
+                        <input class="color-input" id="color-input" type="color" value="#ff0080" />
+
+                        <div class="dropdown-menu">
+                              <select name="color-schemes" class="color-schemes" id="color-schemes">
+                                    <option class="color-scheme" value="Monochrome">
+                                          Monochrome
+                                    </option>
+                                    <option class="color-scheme" value="Monochrome-dark">
+                                          Monochrome-dark
+                                    </option>
+                                    <option class="color-scheme" value="Monochrome-light">
+                                          Monochrome-light
+                                    </option>
+                                    <option class="color-scheme" value="Analogic">Analogic</option>
+                                    <option class="color-scheme" value="Complement">
+                                          Complement
+                                    </option>
+                                    <option class="color-scheme" value="Analogic-complement">
+                                          Analogic-complement
+                                    </option>
+                                    <option class="color-scheme" value="Triad">Triad</option>
+                              </select>
+                        </div>
+
+                        <button type="submit" class="color-scheme-btn" id="color-scheme-btn">
+                              Get color scheme
+                        </button>
+                  </div>
+            </section>
+            <section>
+                  <div class="color-section flex">
+                        <label>
+                              <div class="result-colors flex">
+                                    <div class="color-name-box">
+                                          <h4 class="color-hex">#000000</h4>
+                                    </div>
+                              </div>
+                        </label>
+
+                        <div class="result-colors flex">
+                              <div class="color-name-box">
+                                    <h4 class="color-hex">#000000</h4>
+                              </div>
+                        </div>
+
+                        <div class="result-colors flex">
+                              <div class="color-name-box">
+                                    <h4 class="color-hex">#000000</h4>
+                              </div>
+                        </div>
+
+                        <div class="result-colors flex">
+                              <div class="color-name-box">
+                                    <h4 class="color-hex">#000000</h4>
+                              </div>
+                        </div>
+
+                        <div class="result-colors flex">
+                              <div class="color-name-box">
+                                    <h4 class="color-hex">#000000</h4>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+      </div>
+
+      <script src="index.js"></script>
+</body>
+
+</html>
