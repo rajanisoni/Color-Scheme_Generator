@@ -16,7 +16,7 @@ function getColorScheme() {
             for (let i = 0; i < 5; i++) {
                 // console.log(data.colors[i].hex.value)
                 document.getElementsByClassName("result-colors")[i].style.backgroundColor = data.colors[i].hex.value
-                document.getElementsByClassName("color-name-box")[i].textContent = data.colors[i].hex.value
+                document.getElementsByClassName("color-hex")[i].textContent = data.colors[i].hex.value
             }
         })
 }
@@ -24,9 +24,12 @@ function getColorScheme() {
 // COPY ON CLICK
 
 for(let i=0; i<5; i++){
+
+    const spanDiv = document.getElementsByClassName("span-div");
     const colorBox = document.getElementsByClassName("color-name-box");
     colorBox[i].addEventListener("click",function(){
+        spanDiv[i].classList.toggle("span")
         navigator.clipboard.writeText( colorBox[i].textContent)
-        alert("Copied")})
+       })
    }
    
